@@ -3,7 +3,7 @@ package b
 import (
 	"fmt"
 
-	"github.com/mantishK/dep/a"
+	"github.com/mantishK/dep/i"
 )
 
 type B struct {
@@ -18,7 +18,6 @@ func NewB() *B {
 	return b
 }
 
-func RequireA() {
-	o := a.NewA()
+func RequireA(o i.Aprinter) {
 	o.PrintA()
 }
